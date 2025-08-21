@@ -2,9 +2,6 @@
 Smart Face Mask Detection with YOLOv8, built for real-time applications in developing countries to ensure COVID-19 safety compliance.
 
 
-# Face Mask Detection with YOLOv8  
-Real-time mask compliance detection for public health in developing regions.  
-
 ---
 
 ## 🧾 Overview
