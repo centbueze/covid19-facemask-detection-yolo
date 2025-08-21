@@ -19,7 +19,7 @@ This project demonstrates how **AI and computer vision** can be leveraged to pro
 - Trained with a custom dataset (Mask, No Mask, Bad Mask)  
 - Real-time detection on images, videos, and webcams  
 - Lightweight — suitable for deployment on resource-constrained devices  
-- Extendable to **ESP32-CAM** or **Flask web app** for live monitoring  
+- **Flask web app** for live monitoring  
 
 ---
 
@@ -30,6 +30,28 @@ The dataset was custom-curated and annotated with three classes:
 - `bad_mask`  
 
 Dataset is available on [Roboflow](https://roboflow.com/) (or replace with your dataset link).  
+
+---
+
+## 🏋️ Training
+yolo detect train data=data/data.yaml model=yolov8n.pt epochs=100 imgsz=640
+
+---
+
+## 📊 Validation
+yolo detect val model=models/best.pt data=data/data.yaml
+
+---
+
+##🎯 Inference
+# Single image
+yolo detect predict model=models/best.pt source=test.jpg  
+
+# Folder of images
+yolo detect predict model=models/best.pt source=path/to/images/  
+
+# Webcam
+yolo detect predict model=models/best.pt source=0  
 
 ---
 
