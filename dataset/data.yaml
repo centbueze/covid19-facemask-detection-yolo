@@ -1,0 +1,6 @@
+train: C:/Users/user/Desktop/test/ultralytics-cpu/ultralytics/data/dataset/images/train
+val: C:/Users/user/Desktop/test/ultralytics-cpu/ultralytics/data/dataset/images/val
+test: C:/Users/user/Desktop/test/ultralytics-cpu/ultralytics/data/dataset/images/test
+
+nc: 3
+names: ['Mask', 'No Mask', 'Bad Mask']
